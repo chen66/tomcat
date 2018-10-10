@@ -77,3 +77,10 @@ instructions for reporting a bug
 ### Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for more info.
+
+### vm options
+
+```
+-Dcatalina.home=D:\open-source\tomcat -Dcatalina.base=D:\open-source\tomcat -Djava.endorsed.dirs=D:\open-source\tomcat\endorsed -Djava.io.tmpdir=D:\open-source\tomcat\temp -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.util.logging.config.file=D:\open-source\tomcat\conf\logging.properties -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Djdk.tls.ephemeralDHKeySize=2048
+```
+

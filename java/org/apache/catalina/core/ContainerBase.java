@@ -885,6 +885,7 @@ public abstract class ContainerBase extends LifecycleMBeanBase
     @Override
     protected void initInternal() throws LifecycleException {
         reconfigureStartStopExecutor(getStartStopThreadsInternal());
+        printStackInfo();
         super.initInternal();
     }
 

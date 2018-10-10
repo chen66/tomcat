@@ -246,4 +246,17 @@ public abstract class LifecycleMBeanBase extends LifecycleBase
         return oname;
     }
 
+    /**
+     * 打印栈信息(供测试使用)
+     */
+    protected void printStackInfo(){
+        Throwable throwable = new Throwable();
+        for (StackTraceElement element : throwable.getStackTrace()) {
+            System.out.print(element.getClassName() + "\t");
+            System.out.print(element.getMethodName() + "\t");
+            System.out.print(element.getFileName() + "\t");
+            System.out.println(element.getLineNumber());
+        }
+    }
+
 }
